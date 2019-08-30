@@ -1,4 +1,4 @@
-package ru.ak.sftpclient.model;
+package ru.ak.model;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

@@ -1,9 +1,9 @@
 package ru.ak.sftpclient;
 
 import com.jcraft.jsch.*;
-import ru.ak.sftpclient.model.Connection;
-import ru.ak.sftpclient.model.InfoFile;
-import ru.ak.sftpclient.model.Response;
+import ru.ak.model.Connection;
+import ru.ak.model.InfoFile;
+import ru.ak.model.Response;
 
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
@@ -143,7 +143,7 @@ public class SftpClient {
                 channel.getSession().disconnect();
                 response.setResult(true);
 
-                channels.remove(uuid);
+                channels.remove(UUID.fromString(uuid));
 
             } catch (JSchException ex) {
                 response.setError(true);
