@@ -19,6 +19,9 @@
 
         <jaxws.version>2.3.2</jaxws.version>
         <jsch.version>0.1.55</jsch.version>
+
+        <maven-compiler.version>3.8.0</maven-compiler.version>
+        <maven-assembly.version>3.1.1</maven-assembly.version>
     </properties>
 
     <dependencies>
@@ -41,6 +44,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler.version}</version>
                 <configuration>
                     <source>${maven.compiler.source}</source>
                     <target>${maven.compiler.target}</target>
@@ -48,6 +52,7 @@
             </plugin>
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
+                <version>${maven-assembly.version}</version>
                 <configuration>
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
