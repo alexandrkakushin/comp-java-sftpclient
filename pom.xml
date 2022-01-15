@@ -17,7 +17,7 @@
 
         <finalname>sftpclient</finalname>
 
-        <jaxws.version>2.3.4</jaxws.version>
+        <jaxws.version>2.3.5</jaxws.version>
         <jsch.version>0.1.55</jsch.version>
 
         <maven-compiler.version>3.8.0</maven-compiler.version>
